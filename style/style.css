@@ -1,0 +1,457 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato-Thin.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('/fonts/NotoSansJP-Regular.otf') format('otf');
+}
+
+:root {
+  --cinza-: #bbb;
+  --leite-: #ffe3d8;
+  --azul-claro-: #03506f;
+  --azul-medio-: #082e3d;
+  --azul-escuro-: #1f195c;
+  --azul-bebe-: rgb(151, 171, 231);
+}
+
+body {
+  background-color: var(--azul-medio-);
+  font-family: 'NotoSans', sans-serif;
+  font-size: 14pt;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0 auto;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 30pt;
+}
+
+h2 {
+  font-family: 20pt;
+}
+
+h3 {
+  font-size: 14pt;
+  font-weight: 600;
+}
+
+/* Estilo para o cabecalho da pagina */
+
+#cabecalho {
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--azul-escuro-);
+  color: #fff;
+  height: 70px;
+  margin-top: -20px;
+  padding: 10px 20px;
+  width: 100vmax;
+}
+
+#cabecalho h1 {
+  text-align: center;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: -25px;
+}
+
+/* Estilo para a secção Hero da pagina */
+ .hero {
+  background: url('/images/hero.png') no-repeat;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.7) 51%, rgba(0,0,0,0.9) 100%), url('/images/hero.png') no-repeat center center scroll;
+  background-size: cover;
+  border-radius: 3px;
+  height: 85vh;
+  padding: 1rem;
+  margin-top: 10px;
+  width: 90vw;
+}
+
+ .hero .hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  margin-top: 80px;
+}
+
+ .hero .hero-title h2 {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+ .hero .hero-title p {
+  font-weight: 500;
+  color: #fff;
+  margin-top: 5px;
+}
+
+ .hero .hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: calc(100% - 87%) 50px;
+}
+
+ .hero .hero-text div {
+  margin: auto 20px;
+  color: #fff;
+}
+
+ .hero .hero-text div p {
+  font-size: 12pt;
+  text-align: left;
+}
+
+
+/* Estilo para a secçao Team */
+ .team {
+  align-items: center;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 20px;
+  width: 100vw;
+}
+
+ .team .card-group {
+  width: 100%;
+  flex: 0 1 auto;
+  order: 2;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  padding: 20px;
+}
+
+ .team .card-group::-webkit-scrollbar {
+  width: 0;
+}
+
+ .team .card{
+  background-color: var(--azul-bebe-);
+  display: inline-block;
+  min-width: 250px;
+  width: 270px;
+  height: 350px;
+  text-align: center;
+  margin: auto 10px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 12pt;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transform: scale(1);
+  transition: transform ease-in .7s, background-color ease-out .9s;
+}
+
+ .team .card:hover {
+  transition: transform ease-out .7s, background-color ease-out .9s;
+  transform: scale(1.1);
+  background-color: var(--azul-medio-);
+}
+
+ .team .card .more.active{
+  transition: background-color ease-out .7s;
+  background-color: var(--azul-bebe-);
+}
+
+ .team h2 {
+  color: var(--azul-escuro-);
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+ .team .card .img {
+  border-radius: 100px;
+  background-color: #fff;
+  width: 120px;
+  height: 120px;
+  margin: 20px auto;
+}
+
+ .team .card .more {
+  background-color: var(--azul-medio-);
+  transition: background-color ease-in .7s;
+  height: 50px;
+  position: relative;
+  top: 4.375rem;
+}
+
+ .team .card  p {
+  margin: 4px auto;
+}
+
+ .team .card .more a {
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  margin: 15px auto;
+  left: calc(100% - 69%) ;
+}
+
+
+/* Estilo para a galeria de trabalhos e projectos realizados */
+.content { 
+  background-color: var(--cinza-);
+  border: 1px solid #fff;
+  margin-top: 20px;
+  color: #655;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+
+.content h2, p {
+  margin: 5px auto;
+  text-align: center;
+}
+
+.content .detail-image {
+  margin: 10px auto;
+  height: 50%;
+  width: 100%;
+  border: 5px solid #082e3d25;
+}
+
+.content .galeria {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow-x: auto;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.content .galeria .images {
+  border: 5px solid #082e3d25;
+  margin: 0 10px;
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+}
+
+/* Estilo para a área dos preços */
+.price {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 1rem;
+  width: 100%;
+  margin-left: 0;
+}
+
+.price h2, small {
+  text-align: center;
+  margin-bottom: 5px;
+  color: var(--azul-bebe-);
+}
+
+.price .price-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 20px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.price .price-group .card-price {
+  background-color: #fff;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+  height: 90%;
+  padding: 2rem;
+  margin: auto 5px;
+  width: 250px;
+}
+
+/* Estilo para o Card Principal */
+
+.price .price-group .card-price.ext {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+  background-color: royalblue;
+  color: #fff;
+}
+
+.price .price-group .card-price.ext h4{
+  color: #fff;
+  font-family: 1rem;
+}
+
+/* ----------------------------------------- */
+
+.price .price-group .card-price .icone img {
+  width: 4.5rem;
+  height: 4.5rem;
+  position: relative;
+  margin-top: 5px;
+  left: calc(100% - 65%);
+}
+
+.price .price-group .card-price h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  text-decoration: underline;
+  letter-spacing: 1.5px;
+}
+
+.price .price-group .card-price h4 {
+  text-align: center;
+  font-size: 1.125rem;
+  color: #655;
+}
+
+.price .price-group .card-price.ext .benefits{
+  color: #fff;
+  font-size: 0.99rem;
+}
+
+.price .price-group .card-price .benefits {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  font-size: 16px;
+  color: #001;
+  font-stretch: expanded;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+
+.price .price-group .card-price button {
+  border: none;
+  padding: .5rem 2.5rem;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--azul-escuro-);
+  margin-left: 20%;
+  margin-top: 5px;
+  transform: scale(1);
+  transition: background ease-in .3s, transform ease-in 90ms;
+}
+
+.price .price-group .card-price button:hover {
+  background: var(--azul-bebe-);
+  transition: background ease-in .3s;
+}
+
+.price .price-group .card-price button:active {
+  transform: scale(.98);
+  transition: transform ease-in 90ms;
+}
+
+/* Estilo para a Newsletter */
+.newsletter {
+  width: 450px;
+  height: 100%;
+  padding: 3rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 3px;
+  margin: 100px auto 100px;
+  box-shadow: 0 0 7px 5px rgba(255, 255, 255, 0.5);
+}
+
+.newsletter h2 {
+  color: var(--azul-medio-);
+}
+
+.newsletter p {
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.newsletter input {
+  width: 60%;
+  height: 25px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  border: 2px solid var(--azul-claro-);
+  border-radius: 4px;
+}
+
+.newsletter input:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px var(--azul-bebe-);
+}
+
+.newsletter button {
+  padding: 8px 40px;
+  margin-bottom: 1px;
+  background-color: var(--azul-bebe-);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+.newsletter button:active {
+  transform: scale(.98);
+}
+
+/* Esitlo para o footer ou rodapé */
+
+.footer {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+  margin-top: 20px;
+  padding: 1rem;
+  height: 100%;
+}
+
+.footer .copy {
+  margin-top: 20px;
+  margin-bottom: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+

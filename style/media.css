@@ -1,0 +1,119 @@
+/* Media Querys */
+/* Mobiles with 420px of width */
+@media (max-width: 520px) {
+  /*  Media for header area  */
+  #cabecalho h1 {
+    font-size: 32px;
+    top: -15px;
+  }
+
+  /* media querys for hero area */
+  .hero {
+    width: 100vw;
+  }
+
+  .hero .hero-title h2 {
+    font-size: 16px;
+  }
+
+  .hero .hero-title p {
+    font-size: 14px;
+  }
+
+  .hero .hero-text div h3 {
+    font-size: 14px;
+  }
+
+  .hero .hero-text div p {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  /* Media querys for team area */
+  .team .card {
+    transform: scale(0.75);
+    margin-right: 0;
+  }
+
+  .team .card:hover {
+    transform: scale(0.9);
+  }
+
+  .team h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  /* Media  querys for content area */
+  .content {
+    width: 100vw;
+  }
+
+  .content h2 {
+    font-size: 24px;
+    font-family: "Lato", sans-serif;
+  }
+
+  .content p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .content .detail-image {
+    margin: 0;
+    width: 99vw;
+    border: none;
+  }
+
+  .content .galeria {
+    width: 99vw;
+  }
+
+  /*  Media querys for price area  */
+  .price .price-group {
+    flex-direction: column;
+  }
+
+  .price .price-group .card-price {
+    width: 90%;
+    padding: 2rem;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .price .price-group .card-price.ext {
+    transform: scale(1);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .price .price-group .card-price button {
+    transform: scale(0.8);
+  }
+
+  .price .price-group .card-price button:hover {
+    background: var(--azul-escuro-);
+  }
+
+  .price .price-group .card-price button:active {
+    transform: scale(0.75);
+    transition: transform ease-in 90ms;
+  }
+
+  /*  Media Query for Newsletter area   */
+  .newsletter {
+    transform: scale(0.8);
+    margin: auto auto;
+    margin-left: -20px;
+  }
+
+  .newsletter input {
+    height: 39px;
+  }
+
+  .footer {
+    width: 100vw;
+    font-size: 11px;
+  }
+}
