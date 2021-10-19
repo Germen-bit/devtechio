@@ -14,11 +14,11 @@
 <body>
 
   <!-- NavBar -->
-  <header id="cabecalho">
+  <div id="cabecalho">
 
     <h1>Portofólio</h1>
 
-  </header>
+  </div>
 
 
     <!-- Hero landing page -->
@@ -119,13 +119,14 @@
 
       <p>Galeria de imagens dos trabalhos realizados pela Dev Tech IO</p>
 
-      <img class="detail-image" src="images/1.jpg" width="150" height="150">
+      <img class="detail-image" src="images/works1.webp" width="150" height="150">
 
       <div class="galeria">
-        <img class="images" src="images/2.png" width="150" height="150">
-        <img class="images" src="images/3.png" width="150" height="150">
-        <img class="images" src="images/4.png" width="150" height="150">
-        <img class="images" src="images/5.png" width="150" height="150">
+        <img class="images" src="images/works1.webp" width="150" height="150">
+        <img class="images" src="images/works2.webp" width="150" height="150">
+        <img class="images" src="images/works3.webp" width="150" height="150">
+        <img class="images" src="images/works4.png" width="150" height="150">
+        <img class="images" src="images/works5.webp" width="150" height="150">
       </div>
 
     </div>
@@ -138,7 +139,7 @@
 
         <div class="card-price">
           <h3>Pessoal</h3>
-          <i class="icone"><img src="/images/personal.png" alt=""></i>
+          <i class="icone"><img src="images/personal.png" alt=""></i>
           <h4> Akz 10 mil / Mês</h4>
 
           <p class="benefits">Criação da Pagina <span class="atr">✅</span></p>
@@ -147,12 +148,14 @@
           <p class="benefits">Hospedagem <span class="atr"> ❌</span></p>
           <p class="benefits">Emails <span class="atr"> ❌</span></p>
 
-          <button>Comprar</button>
+          <div class="btn-price">
+            <button>Comprar</button>
+          </div>
         </div>
 
         <div class="card-price ext">
           <h3>Empresarial</h3>
-          <i class="icone"><img src="/images/business.png" alt=""></i>
+          <i class="icone"><img src="images/business.png" alt=""></i>
           <h4> Akz 50 mil / Mês</h4>
 
           <p class="benefits">Criação da Pagina <span class="atr">✅</span></p>
@@ -161,12 +164,14 @@
           <p class="benefits">Hospedagem <span class="atr"> ✅</span></p>
           <p class="benefits">Emails <span class="atr"> ✅</span></p>
 
-          <button>Comprar</button>
+          <div class="btn-price">
+            <button>Comprar</button>
+          </div>
         </div>
 
         <div class="card-price">
           <h3>Avançado</h3>
-          <i class="icone"><img src="/images/advanced.png" alt=""></i>
+          <i class="icone"><img src="images/advanced.png" alt=""></i>
           <h4> Akz 25 mil / Mês</h4>
 
           <p class="benefits">Criação da Pagina <span class="atr">✅</span></p>
@@ -175,7 +180,9 @@
           <p class="benefits">Hospedagem <span class="atr"> ❌</span></p>
           <p class="benefits">Emails <span class="atr"> ❌</span></p>
 
-          <button>Comprar</button>
+          <div class="btn-price">
+            <button>Comprar</button>
+          </div>
         </div>
 
       </div>
@@ -188,8 +195,11 @@
         <h2>Newsletter</h2>
         <p> Subscreva a nossa Newsletter para receber a nossas notificações</p>
 
-        <input type="text" name="newsletter" id="newsletter" placeholder="Email">
-        <button>Enviar</button>
+        <div class="newsletter-input">
+          <input type="text" name="newsletter" id="newsletter" placeholder="Email">
+          <button>Enviar</button>
+        </div>
+
       </form>
     </div>
 
@@ -203,7 +213,7 @@
       <p class="copy">Copyright &COPY; <span class="ano">2021 Todos os Direitos Reservados a Dev Tech IO </span> </p>
     </footer>
 
-  <script src="/script/script.js"></script>
+  <script src="script/script.js"></script>
 </body>
 
 </html>
