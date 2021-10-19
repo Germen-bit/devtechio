@@ -153,6 +153,7 @@ h3 {
   flex: 0 1 auto;
   order: 2;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   white-space: nowrap;
   overflow-x: scroll;
@@ -198,7 +199,7 @@ h3 {
   letter-spacing: 1.5px;
 }
 
- .team .card .img {
+ .team .card .img img{
   border-radius: 100px;
   background-color: #fff;
   width: 120px;
