@@ -63,6 +63,7 @@
   .content .detail-image {
     margin: 0;
     width: 99vw;
+    height: 60%;
     border: none;
   }
 
